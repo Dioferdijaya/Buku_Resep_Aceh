@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Asam Keueng — Buku Resep Aceh</title>
+  <style>
+    /* Simple, bersih, dan responsif */
+    :root {
+      --bg: #fafafa;
+      --card: #ffffff;
+      --accent: #8b2e2e;
+      --muted: #666;
+      --pad: 18px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: #111;
+      line-height: 1.5;
+      padding: 24px;
+    }
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+    header h1 { margin: 6px 0; color: var(--accent); }
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(15,15,15,0.06);
+      padding: var(--pad);
+      margin-bottom: 16px;
+    }
+    .meta { color: var(--muted); font-size: 0.95rem; margin-bottom: 8px; }
+    h2 { margin-top: 0; color: #222; }
+    ul { padding-left: 1.2rem; }
+    .ingredients, .steps { display: grid; gap: 8px; }
+    .flex {
+      display:flex;
+      gap:12px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .tag {
+      background:#f3f3f3;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:0.85rem;
+    }
+    footer { text-align:center; color:var(--muted); font-size:0.9rem; margin-top:20px; }
+    @media (max-width:600px){
+      body { padding: 14px; }
+      .container { padding: 0 6px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Buku Resep Aceh</h1>
+      <p class="meta">Resep tradisional — Asam Keueng</p>
+    </header>
+
+    <article class="card">
+      <h2>Asam Keueng</h2>
+      <p class="meta">Hidangan: Sate daging kambing khas Aceh — gurih dan sedikit asam</p>
+
+      <section class="card">
+        <h3>Bahan-bahan</h3>
+        <ul class="ingredients">
+          <li>500 gram daging kambing, potong dadu</li>
+          <li>1 sdt ketumbar</li>
+          <li>2 buah serai (ambil putihnya saja)</li>
+          <li>2 cm kunyit</li>
+          <li>3 buah kemiri</li>
+          <li>3 iris lengkuas</li>
+          <li>3 siung bawang putih</li>
+          <li>6 siung bawang merah</li>
+          <li>Daun pepaya secukupnya</li>
+          <li>Garam secukupnya</li>
+          <li>Kecap secukupnya</li>
+          <li>Margarin secukupnya</li>
+          <li>Minyak goreng secukupnya</li>
+          <li>Tusuk sate</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>Bahan pelengkap</h3>
+        <p class="flex">
+          <span class="tag">Daun bawang</span>
+          <span class="tag">Jeruk nipis</span>
+        </p>
+      </section>
+
+      <section class="card">
+        <h3>Cara membuat</h3>
+        <ol class="steps">
+          <li>Bungkus daging kambing dengan daun pepaya selama 1 jam (untuk melunakkan).</li>
+          <li>Haluskan ketumbar, serai (bagian putih), kunyit, kemiri, lengkuas, bawang putih, dan bawang merah.</li>
+          <li>Tumis bumbu halus hingga harum, tambahkan sedikit minyak jika perlu.</li>
+          <li>Masukkan daging kambing ke dalam tumisan, aduk hingga bumbu meresap. Sisihkan.</li>
+          <li>Tusuk daging yang sudah dibumbui menggunakan tusuk sate.</li>
+          <li>Bakar sate sambil dioles margarin dan kecap secukupnya, bolak-balik sampai empuk dan matang merata.</li>
+          <li>Angkat dan sajikan dengan irisan daun bawang dan perasan jeruk nipis sesuai selera.</li>
+        </ol>
+      </section>
+
+      <section class="card">
+        <h3>Catatan</h3>
+        <p class="meta">Tips: Membungkus dengan daun pepaya membantu memecah serat daging kambing sehingga lebih empuk. Sesuaikan jumlah garam dan kecap sesuai selera.</p>
+      </section>
+    </article>
+
+    <footer>
+    </footer>
+  </div>
+</body>
+</html>
