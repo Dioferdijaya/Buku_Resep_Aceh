@@ -1,0 +1,180 @@
+/* General Styling */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #e9e9e9;
+    color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+li::before {
+    content: '•';
+    color: #29b2a7;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: -10px;
+    top: 0;
+}
+
+/* Recipe Card Container */
+.recipe-card {
+    background-color: #ffffff;
+    width: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.recipe-header {
+    background-color: #29b2a7;
+    padding: 15px 30px;
+}
+
+.recipe-header h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.recipe-content {
+    display: flex;
+    padding: 20px 30px 30px 30px;
+}
+
+/* Columns */
+.column-left {
+    flex: 1.2;
+    padding-right: 20px;
+}
+
+.column-right {
+    flex: 1;
+    padding-left: 20px;
+}
+
+/* Left Column Styling */
+.recipe-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.nutrition-info {
+    margin-top: 20px;
+}
+
+.info-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.nutrition-details {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.nutrition-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.nutrition-item .label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.nutrition-item .value {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.nutrition-item .unit {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.energi { color: #f5a623; }
+.protein { color: #9013fe; }
+.lemak { color: #d0021b; }
+.nutrition-item .value.energi { color: #f5a623; }
+.nutrition-item .value.protein { color: #9013fe; }
+.nutrition-item .value.lemak { color: #d0021b; }
+
+.contribution-note {
+    font-size: 11px;
+    font-style: italic;
+    color: #888;
+    margin: 0;
+}
+
+.instructions {
+    margin-top: 25px;
+}
+
+/* Common Section Title Styling */
+.instructions h2,
+.ingredients-section h2 {
+    background-color: #e0f4f2;
+    color: #29b2a7;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 0 15px 0;
+}
+
+.instructions ul {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Right Column Styling */
+.servings {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.servings p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #29b2a7;
+}
+
+.servings span {
+    font-size: 52px;
+    font-weight: 900;
+    color: #29b2a7;
+    line-height: 1;
+}
+
+.ingredients-section {
+    margin-bottom: 20px;
+}
+
+.ingredients-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+}
